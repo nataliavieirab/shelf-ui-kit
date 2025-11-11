@@ -1,0 +1,25 @@
+| Token | Valor original |  px | factor (px / 8) |   Código equivalente   |
+| :---- | :------------- | :-: | :-------------: | :--------------------: |
+| none  | 0              |  0  |        0        |   `theme.spacing(0)`   |
+| nano  | 0.0625rem      |  1  |      0.125      | `theme.spacing(0.125)` |
+| micro | 0.125rem       |  2  |       0.25      |  `theme.spacing(0.25)` |
+| xxxxs | 0.25rem        |  4  |       0.5       |  `theme.spacing(0.5)`  |
+| xxxs  | 0.375rem       |  6  |       0.75      |  `theme.spacing(0.75)` |
+| xm    | 0.4375rem      |  7  |      0.875      | `theme.spacing(0.875)` |
+| xxs   | 0.5rem         |  8  |        1        |   `theme.spacing(1)`   |
+| xss   | 0.625rem       |  10 |       1.25      |  `theme.spacing(1.25)` |
+| xs    | 0.75rem        |  12 |       1.5       |  `theme.spacing(1.5)`  |
+| base  | 0.875rem       |  14 |       1.75      |  `theme.spacing(1.75)` |
+| sm    | 1rem           |  16 |        2        |   `theme.spacing(2)`   |
+| smm   | 1.125rem       |  18 |       2.25      |  `theme.spacing(2.25)` |
+| md    | 1.5rem         |  24 |        3        |   `theme.spacing(3)`   |
+| mmd   | 1.75rem        |  28 |       3.5       |  `theme.spacing(3.5)`  |
+| lg    | 2rem           |  32 |        4        |   `theme.spacing(4)`   |
+| lgm   | 2.125rem       |  34 |       4.25      |  `theme.spacing(4.25)` |
+| llm   | 2.25rem        |  36 |       4.5       |  `theme.spacing(4.5)`  |
+| lgg   | 2.375rem       |  38 |       4.75      |  `theme.spacing(4.75)` |
+| gxx   | 2.5rem         |  40 |        5        |   `theme.spacing(5)`   |
+| lgx   | 2.75rem        |  44 |       5.5       |  `theme.spacing(5.5)`  |
+| xl    | 3rem           |  48 |        6        |   `theme.spacing(6)`   |
+| xxl   | 4rem           |  64 |        8        |   `theme.spacing(8)`   |
+| xxxl  | 6rem           |  96 |        12       |   `theme.spacing(12)`  |
