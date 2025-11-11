@@ -16,10 +16,6 @@ root.render(
       <CustomThemeProvider brandTheme={{ colors: ohanaPDVColors }}>
         <App />
       </CustomThemeProvider>
-      {/* <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider> */}
     </BrowserRouter>
   </React.StrictMode>
 );
