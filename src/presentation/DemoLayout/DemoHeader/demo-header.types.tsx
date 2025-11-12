@@ -1,4 +1,4 @@
-export interface OhanaHeaderProps {
+export interface DemoHeaderProps {
   currentUserName: string;
   currentUserRole: string;
   currentUserAvatar?: string;

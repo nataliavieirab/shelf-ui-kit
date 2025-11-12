@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PasswordTextField from "../components/Textfields/PasswordTextfield/password-textfiend";
+import PasswordTextField from "../components/Textfields/PasswordTextfield/password-textfield";
 
 export default function PasswordTextfieldExample() {
   const [password, setPassword] = useState();

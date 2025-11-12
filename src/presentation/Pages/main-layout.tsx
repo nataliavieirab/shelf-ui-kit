@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import OhanaHeaderExample from "../OhanaApp/OhanaHeader/ohana-header-example";
-import OhanaSidebar from "../OhanaApp/OhanaSidebar/ohana-sidebar";
 import { SidebarProvider } from "../components/Sidebar/sidebar-context";
+import DemoHeaderExample from "../DemoLayout/DemoHeader/demo-header-example";
+import DemoSidebar from "../DemoLayout/DemoSidebar/demo-sidebar";
 
 export default function MainLayout() {
   return (
@@ -14,7 +14,7 @@ export default function MainLayout() {
             backgroundColor: "#EDEDED",
           }}
         >
-          <OhanaSidebar />
+          <DemoSidebar />
 
           <main
             style={{
@@ -25,7 +25,7 @@ export default function MainLayout() {
               height: "100vh",
             }}
           >
-            <OhanaHeaderExample />
+            <DemoHeaderExample />
 
             <div
               style={{

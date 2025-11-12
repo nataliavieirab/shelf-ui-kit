@@ -4,7 +4,7 @@ import { HeightBoxSizes, WidthBoxSizes } from "../../../components/types";
 import { useTheme } from "@mui/material/styles";
 import { pxToRem } from "../../../../utils/px-to-rem";
 
-export default function HeaderSelect() {
+export default function DemoHeaderSelect() {
   const [selectedItemId, setSelectedItemId] = useState<string>("");
   const theme = useTheme();
   const items: any = [

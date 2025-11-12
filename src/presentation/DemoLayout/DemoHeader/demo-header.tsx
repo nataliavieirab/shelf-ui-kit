@@ -12,19 +12,19 @@ import {
 import CustomHeader from "../../components/Header/custom-header";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import MenuIcon from "@mui/icons-material/Menu";
-import { OhanaHeaderProps } from "./ohana-header.types";
-import { getHeaderStyles } from "./ohana-header.styles";
-import { useOhanaHeader } from "./use-ohana-header";
+import { DemoHeaderProps } from "./demo-header.types";
+import { getHeaderStyles } from "./demo-header.styles";
+import { useOhanaHeader } from "./use-demo-header";
 import { ArrowDropDownIcon } from "../../components/Icons/gradient-icons";
 import { useSidebarContext } from "../../components/Sidebar/sidebar-context";
-import HeaderSelect from "./HeaderSelect/ohana-header.select";
 import { pxToRem } from "../../../utils/px-to-rem";
+import DemoHeaderSelect from "./HeaderSelect/demo-header.select";
 
-export default function OhanaHeader({
+export default function DemoHeader({
   currentUserName,
   currentUserRole,
   currentUserAvatar,
-}: OhanaHeaderProps) {
+}: DemoHeaderProps) {
   const theme = useTheme();
   const { handleMenuClick, handleNotificationClick, menuProps, smDown } =
     useOhanaHeader();
@@ -53,7 +53,7 @@ export default function OhanaHeader({
     </Box>,
 
     <Box key="actions" sx={headerStyles.actionsContainer}>
-      <HeaderSelect />
+      <DemoHeaderSelect />
       <IconButton
         onClick={handleNotificationClick}
         sx={{

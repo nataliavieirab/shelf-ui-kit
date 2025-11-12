@@ -1,4 +1,3 @@
-import logoUrl from "../../../assets/Logohana.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/sidebar";
 import {
@@ -10,8 +9,10 @@ import {
   StoreIcon,
 } from "../../components/Icons/gradient-icons";
 import { SidebarClosedDisplay } from "../../components/Sidebar/sidebar.types";
+import logoUrl from "../../../assets/Logohana.svg";
+import { ThemeContext } from "@emotion/react";
 
-export default function OhanaSidebarTeste() {
+export default function DemoSidebar() {
   const navigate = useNavigate();
   const { projectid } = useParams();
 
@@ -43,15 +44,15 @@ export default function OhanaSidebarTeste() {
           ],
         },
         {
-          title: "Gerência",
+          title: "PDV",
           modules: [
             {
-              title: "Operacional",
+              title: "Configurações",
               icon: SettingsIcon,
               items: [
                 {
-                  title: "Novo Pedido",
-                  action: (id) => navigate(`/projects/${id}/addnewproduct`),
+                  title: "Cardápio",
+                  action: (id) => navigate(`/projects/${id}/products`),
                 },
                 {
                   title: "Pedidos Abertos",
@@ -128,6 +129,59 @@ export default function OhanaSidebarTeste() {
         },
         {
           title: "Administração",
+          modules: [
+            {
+              title: "Usuários e Permissões",
+              icon: PeopleAltIcon,
+              items: [
+                {
+                  title: "Funcionários",
+                  action: (id) => navigate(`/projects/${id}/employees`),
+                },
+                {
+                  title: "Perfis de Acesso",
+                  action: (id) => navigate(`/projects/${id}/profiles`),
+                },
+              ],
+            },
+            {
+              title: "Configurações",
+              icon: SettingsIcon,
+              items: [
+                { title: "Empresa", action: () => console.log("Empresa") },
+                {
+                  title: "Impressoras",
+                  action: (id) => navigate(`/projects/${id}/printers`),
+                },
+                {
+                  title: "Tributação",
+                  action: (id) => navigate(`/projects/${id}/taxing`),
+                },
+                {
+                  title: "Integrações",
+                  action: (id) => navigate(`/projects/${id}/integrations`),
+                },
+              ],
+            },
+            {
+              title: "Filiais / Lojas",
+              icon: StoreIcon,
+              items: [
+                {
+                  title: "Gerenciar Lojas",
+                  action: (id) =>
+                    navigate(`/projects/${id}/franchisemanagement`),
+                },
+                {
+                  title: "Configurações por Loja",
+                  action: (id) => navigate(`/projects/${id}/franchisesettings`),
+                },
+              ],
+            },
+          ],
+        },
+        {
+          title: "Exemplo",
           modules: [
             {
               title: "Usuários e Permissões",

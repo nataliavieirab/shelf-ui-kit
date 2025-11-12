@@ -1,11 +1,11 @@
 // import DashboardGradientIcon from "../../components/Icons/dashboard-gradient-icon";
-import OhanaHeader from "./ohana-header";
+import DemoHeader from "./demo-header";
 
-export default function OhanaHeaderExample() {
+export default function DemoHeaderExample() {
   return (
-    <OhanaHeader
+    <DemoHeader
       currentUserName="Natalia Vieira "
       currentUserRole="Admin"
-    ></OhanaHeader>
+    ></DemoHeader>
   );
 }

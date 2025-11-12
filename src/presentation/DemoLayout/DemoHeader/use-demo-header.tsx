@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderMenuProps } from "./ohana-header.types";
+import { HeaderMenuProps } from "./demo-header.types";
 import { Theme, useMediaQuery } from "@mui/material";
 
 export const useOhanaHeader = () => {
