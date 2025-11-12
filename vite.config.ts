@@ -1,6 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import path, { resolve } from "path";
+import dts from "vite-plugin-dts";
+
+const externalDependencies = [
+  "react",
+  "react-dom",
+  "react-router-dom",
+  "@mui/material",
+  "@mui/icons-material",
+  "@mui/x-data-grid",
+  "@mui/x-date-pickers",
+  "@emotion/react",
+  "@emotion/styled",
+  "dayjs",
+];
 
 export default defineConfig({
   plugins: [
@@ -8,6 +22,9 @@ export default defineConfig({
       babel: {
         plugins: ["@emotion"],
       },
+    }),
+    dts({
+      insertTypesEntry: true,
     }),
   ],
   resolve: {
@@ -20,8 +37,30 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: "build",
     sourcemap: true,
+    lib: {
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "UIComponentKit",
+      formats: ["es", "cjs"],
+      fileName: (format) => `ui-component-kit.${format}.js`,
+    },
+    rollupOptions: {
+      external: externalDependencies,
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          "react-router-dom": "ReactRouterDOM",
+          "@mui/material": "MuiMaterial",
+          "@mui/icons-material": "MuiIconsMaterial",
+          "@mui/x-data-grid": "MuiXDataGrid",
+          "@mui/x-date-pickers": "MuiXDatePickers",
+          "@emotion/react": "EmotionReact",
+          "@emotion/styled": "EmotionStyled",
+          dayjs: "dayjs",
+        },
+      },
+    },
   },
   define: {
     "process.env": process.env,
