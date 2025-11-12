@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { SidebarProvider } from "../components/Sidebar/sidebar-context";
-import DemoHeaderExample from "../DemoLayout/DemoHeader/demo-header-example";
-import DemoSidebar from "../DemoLayout/DemoSidebar/demo-sidebar";
+import DemoHeaderExample from "../demoLayout/demoHeader/demo-header-example";
+import DemoSidebar from "../demoLayout/demoSidebar/demo-sidebar";
 
 export default function MainLayout() {
   return (

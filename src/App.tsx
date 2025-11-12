@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import ComponentsPreviewPage from "./presentation/Pages/components-page";
-import MainLayout from "./presentation/Pages/main-layout";
+import ComponentsPreviewPage from "./presentation/pages/components-page";
+import MainLayout from "./presentation/pages/main-layout";
 
 function App() {
   return (

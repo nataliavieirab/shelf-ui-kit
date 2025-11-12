@@ -10,7 +10,6 @@ import {
 } from "../../components/Icons/gradient-icons";
 import { SidebarClosedDisplay } from "../../components/Sidebar/sidebar.types";
 import logoUrl from "../../../assets/Logohana.svg";
-import { ThemeContext } from "@emotion/react";
 
 export default function DemoSidebar() {
   const navigate = useNavigate();
