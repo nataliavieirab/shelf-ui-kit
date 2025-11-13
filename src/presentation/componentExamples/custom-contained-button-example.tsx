@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CustomContainedButton from "../components/CustomContainedButton/custom-contained-button";
-import { BoxSizes } from "../components/types";
 
 export default function CustomContainedButtonExample() {
   const [click, setClick] = useState(0);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SelectComponent from "../components/Select/select";
 import { HeightBoxSizes } from "../components/types";
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 
 export default function SelectExample() {
   const [selectedItemId, setSelectedItemId] = useState<string>("");
@@ -46,26 +46,20 @@ export default function SelectExample() {
   return (
     <Box
       sx={{
-        // padding: "0px 0px 4px 0px",
-        // marginBottom: "10px",
         display: "flex",
         alignSelf: "center",
-        // flexDirection: "row",
-        // gap: 20,
       }}
     >
-      {/* <div>{indexedItems[selectedItemId]?.name}</div> */}
       <SelectComponent
         items={items.map((item: any) => ({
           key: item.name,
           value: item.id,
         }))}
-        // label="Select"
         changeHandler={function (value: any): void {
           setSelectedItemId(value);
         }}
         withSearch={false}
-        searchHeight={HeightBoxSizes.extraSmall}
+        searchHeight={HeightBoxSizes(useTheme()).extraSmall}
       />
     </Box>
   );

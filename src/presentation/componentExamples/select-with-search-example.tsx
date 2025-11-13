@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SelectComponent from "../components/Select/select";
 import { HeightBoxSizes } from "../components/types";
+import { useTheme } from "@mui/material";
 
 export default function SelectWSearchExample() {
   const [selectedItemId, setSelectedItemId] = useState<string>("");
@@ -48,21 +49,18 @@ export default function SelectWSearchExample() {
         padding: "8px 0px 0px 0px",
         display: "flex",
         flexDirection: "row",
-        // gap: 20,
       }}
     >
-      {/* <div>{indexedItems[selectedItemId]?.name}</div> */}
       <SelectComponent
         items={items.map((item: any) => ({
           key: item.name,
           value: item.id,
         }))}
-        // label="Select"
         changeHandler={function (value: any): void {
           setSelectedItemId(value);
         }}
         withSearch={true}
-        searchHeight={HeightBoxSizes.extraSmall}
+        searchHeight={HeightBoxSizes(useTheme()).extraSmall}
       />
     </div>
   );
