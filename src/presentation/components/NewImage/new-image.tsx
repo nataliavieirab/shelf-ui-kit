@@ -41,7 +41,7 @@ export default function NewImage({ onFileSelect }: NewImageProps) {
           // borderRadius: "50%",
           borderRadius: "10px",
           border: "1px dashed #333333",
-          backgroundColor: theme.customBackground.default,
+          backgroundColor: theme.palette.grey.A100,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -63,7 +63,11 @@ export default function NewImage({ onFileSelect }: NewImageProps) {
         ) : (
           <IconButton disableRipple sx={{ flexDirection: "column" }}>
             <PhotoCamera sx={{ color: "#333333", fontSize: "24px" }} />
-            <Typography variant="body2" mt={1}>
+            <Typography
+              variant="body2"
+              mt={1}
+              sx={{ color: theme.palette.text.primary }}
+            >
               Upload photo
             </Typography>
           </IconButton>

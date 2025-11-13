@@ -29,7 +29,6 @@ import {
   toggleButtonContainerStyles,
   toggleButtonStyles,
   searchIconStyles,
-  searchInputProps,
   sectionContainerStyles,
   moduleButtonStyles,
   moduleIconStyles,

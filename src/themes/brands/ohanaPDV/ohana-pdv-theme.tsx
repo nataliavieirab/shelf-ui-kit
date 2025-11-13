@@ -21,7 +21,6 @@ export const ohanaPDVColors: GlobalColors = {
   customBackground: {
     main: "#282828",
     light: "#ffffff",
-    // dark: "rgba(0, 0, 0, 0.24)",
     dark: "#1C1C1C",
     default: "#959595",
   },
