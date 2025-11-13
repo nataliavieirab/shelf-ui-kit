@@ -1,10 +1,10 @@
 import { createTheme, ThemeOptions, Theme } from "@mui/material/styles";
 import { deepmerge } from "@mui/utils";
 
-import { globalColors } from "../themes/base/colors";
-import { typography } from "../themes/base/typography";
-import { layoutMetrics } from "../themes/base/layout-metrics";
-import { componentsOverrides } from "../themes/base/components-overrides"; // <-- Importação adicionada
+import { globalColors } from "../themes/baseTokens/colors";
+import { typography } from "../themes/baseTokens/typography";
+import { layoutMetrics } from "../themes/baseTokens/layout-metrics";
+import { componentsOverrides } from "../themes/baseTokens/components-overrides"; // <-- Importação adicionada
 
 interface CustomThemeOptions {
   colors?: Partial<typeof globalColors>;

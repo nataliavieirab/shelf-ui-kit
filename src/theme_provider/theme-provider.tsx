@@ -1,5 +1,5 @@
 import React, { ReactNode, useMemo } from "react";
-import { globalColors, GlobalColors } from "../themes/base/colors";
+import { globalColors, GlobalColors } from "../themes/baseTokens/colors";
 import { createCustomTheme } from "./create-custom-theme";
 import { ThemeProvider as MuiThemeProvider, CssBaseline } from "@mui/material";
 

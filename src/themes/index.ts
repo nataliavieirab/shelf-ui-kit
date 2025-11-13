@@ -1,2 +1,2 @@
-export * from "./base";
+export * from "./baseTokens";
 export * from "./brands";

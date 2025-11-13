@@ -1,5 +1,5 @@
 import "@mui/material/styles";
-import { layoutMetrics } from "../themes/base/layout-metrics";
+import { layoutMetrics } from "../themes/baseTokens/layout-metrics";
 import { SystemStyleObject } from "@mui/system";
 import { Theme as MuiTheme } from "@mui/material/styles";
 

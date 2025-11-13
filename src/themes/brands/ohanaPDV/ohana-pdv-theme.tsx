@@ -1,4 +1,4 @@
-import { GlobalColors, globalColors } from "../../base/colors";
+import { GlobalColors, globalColors } from "../../baseTokens/colors";
 
 export const ohanaPDVColors: GlobalColors = {
   ...globalColors,
