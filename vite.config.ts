@@ -45,7 +45,7 @@ export default defineConfig({
       fileName: (format) => `ui-component-kit.${format}.js`,
     },
     rollupOptions: {
-      external: externalDependencies,
+      external: (id) => externalDependencies.some((dep) => id.startsWith(dep)),
       output: {
         globals: {
           react: "React",
