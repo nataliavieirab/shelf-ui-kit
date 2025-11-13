@@ -9,7 +9,7 @@ import {
   StoreIcon,
 } from "../../components/Icons/gradient-icons";
 import { SidebarClosedDisplay } from "../../components/Sidebar/sidebar.types";
-import logoUrl from "../../../assets/Logohana.svg";
+import logoUrl from "../../../assets/demo-logo.svg";
 
 export default function DemoSidebar() {
   const navigate = useNavigate();
