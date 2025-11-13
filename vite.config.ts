@@ -25,6 +25,10 @@ export default defineConfig({
     }),
     dts({
       insertTypesEntry: true,
+      compilerOptions: {
+        noEmit: false,
+        skipLibCheck: true, // Ignora erros em bibliotecas
+      },
     }),
   ],
   resolve: {
