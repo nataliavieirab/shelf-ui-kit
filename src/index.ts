@@ -24,4 +24,9 @@ export { default as CustomHeader } from "./presentation/components/Header/custom
 
 export * from "./types/mui.d";
 export * from "./presentation/components/types";
+
 export * from "./presentation/components/Icons/gradient-icons";
+
+export * from "./presentation/styles/dynamicStyles/main-content-container-style";
+export * from "./presentation/styles/dynamicStyles/main-page-wrapper-content-style";
+export * from "./presentation/styles/dynamicStyles/scroll-style";
