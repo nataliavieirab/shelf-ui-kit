@@ -1,11 +1,12 @@
 {
   "name": "@nataliavieirab/ui-componentkit",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "type": "module",
   "main": "./dist/ui-component-kit.cjs.js",
   "module": "./dist/ui-component-kit.es.js",
   "types": "./dist/index.d.ts",
+  "typings": "./dist/types/mui.d.ts",
   "files": [
     "dist"
   ],
