@@ -1,6 +1,6 @@
 {
-  "name": "ui-componentkit",
-  "version": "0.1.0",
+  "name": "@nataliavieirab/ui-componentkit",
+  "version": "0.1.3",
   "private": false,
   "type": "module",
   "main": "./dist/ui-component-kit.cjs.js",
@@ -9,6 +9,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@toolpad/core": "^0.16.0",
     "ajv": "^8.17.1",
