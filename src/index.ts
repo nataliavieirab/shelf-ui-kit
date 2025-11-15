@@ -1,5 +1,3 @@
-import { HeightBoxSizes } from "./presentation/components/types";
-
 export * from "./theme_provider/create-custom-theme";
 export * from "./theme_provider/theme-provider";
 
@@ -15,10 +13,10 @@ export { default as Datepicker } from "./presentation/components/Datepicker/date
 export { default as CheckBoxWithLabel } from "./presentation/components/CheckBox/CheckBoxWithLabel/checkbox-w-label";
 export { default as CustomSwitch } from "./presentation/components/Switches/custom-switch";
 export { default as SwitchWithLabelExample } from "./presentation/components/Switches/switch-with-label-example";
-
+export { default as Sidebar } from "./presentation/components/Sidebar/sidebar";
 export { default as PageTitleContainer } from "./presentation/components/LayoutContainers/PageTitleContainer/page-title-container";
 export { default as TabsContainer } from "./presentation/components/TabsContainer/tabs-container";
-export * from "./presentation/components/Sidebar/sidebar-context"; // Exporta o Contexto da Sidebar
+export * from "./presentation/components/Sidebar/sidebar-context";
 
 export { default as ErrorBox } from "./presentation/components/ErrorBox/error-box";
 export { default as NewImage } from "./presentation/components/NewImage/new-image";
