@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { CustomThemeProvider } from "./theme_provider/theme-provider";
 import { ohanaPDVColors } from "./themes/brands/ohanaPDV/ohana-pdv-theme";
+import { CustomThemeProvider } from "./themeProvider/theme-provider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
