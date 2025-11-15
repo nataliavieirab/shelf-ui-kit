@@ -1,5 +1,5 @@
-export * from "./theme_provider/create-custom-theme";
-export * from "./theme_provider/theme-provider";
+export * from "./themeProvider/create-custom-theme";
+export * from "./themeProvider/theme-provider";
 
 export { default as CustomContainedButton } from "./presentation/components/CustomContainedButton/custom-contained-button";
 export { default as CustomOutlinedButton } from "./presentation/components/CustomOutlinedButton/custom-outlined-button";
