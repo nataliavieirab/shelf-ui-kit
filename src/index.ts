@@ -15,6 +15,7 @@ export { default as CheckBoxWithLabel } from "./presentation/components/CheckBox
 export { default as CustomSwitch } from "./presentation/components/Switches/custom-switch";
 export { default as SwitchWithLabelExample } from "./presentation/components/Switches/switch-with-label-example";
 export { default as Sidebar } from "./presentation/components/Sidebar/sidebar";
+export { SidebarClosedDisplay } from "./presentation/components/Sidebar/sidebar.types";
 export { default as PageTitleContainer } from "./presentation/components/LayoutContainers/PageTitleContainer/page-title-container";
 export { default as TabsContainer } from "./presentation/components/TabsContainer/tabs-container";
 export * from "./presentation/components/Sidebar/sidebar-context";
