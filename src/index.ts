@@ -24,7 +24,7 @@ export { default as ErrorBox } from "./presentation/components/ErrorBox/error-bo
 export { default as NewImage } from "./presentation/components/NewImage/new-image";
 export { default as CustomHeader } from "./presentation/components/Header/custom-header";
 
-export * from "./types/mui.d";
+// export * from "./types/mui.d";
 export * from "./presentation/components/types";
 
 export * from "./presentation/components/Icons/gradient-icons";
