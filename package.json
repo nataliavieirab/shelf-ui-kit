@@ -1,6 +1,6 @@
 {
   "name": "@nataliavieirab/ui-componentkit",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "private": false,
   "type": "module",
   "main": "./dist/ui-component-kit.cjs.js",
@@ -20,8 +20,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && cp src/types/mui.d.ts dist/mui.d.ts",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "@emotion/react": "^11.14.0",
