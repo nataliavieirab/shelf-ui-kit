@@ -1,7 +1,8 @@
 export * from "./themeProvider/create-custom-theme";
 export * from "./themeProvider/theme-provider";
 export * from "./themes/brands/ohanaPDV/ohana-pdv-theme";
-export * from "./themes/baseTokens/colors";
+export { globalColors } from "./themes/baseTokens/colors";
+export type { GlobalColors } from "./themes/baseTokens/colors";
 
 export { default as CustomContainedButton } from "./presentation/components/CustomContainedButton/custom-contained-button";
 export { default as CustomOutlinedButton } from "./presentation/components/CustomOutlinedButton/custom-outlined-button";
