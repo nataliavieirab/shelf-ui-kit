@@ -1,6 +1,5 @@
 export * from "./themeProvider/create-custom-theme";
 export * from "./themeProvider/theme-provider";
-export * from "./themes/brands/ohanaPDV/ohana-pdv-theme";
 export { globalColors } from "./themes/baseTokens/colors";
 export type { GlobalColors } from "./themes/baseTokens/colors";
 
