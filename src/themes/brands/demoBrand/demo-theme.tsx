@@ -1,6 +1,6 @@
 import { GlobalColors, globalColors } from "../../baseTokens/colors";
 
-export const ohanaPDVColors: GlobalColors = {
+export const demoColors: GlobalColors = {
   ...globalColors,
   primary: {
     main: "#D09822",
@@ -26,6 +26,6 @@ export const ohanaPDVColors: GlobalColors = {
   },
 };
 
-export const ohanaPDVTheme = {
-  colors: ohanaPDVColors,
+export const demoColorsTheme = {
+  colors: demoColors,
 };

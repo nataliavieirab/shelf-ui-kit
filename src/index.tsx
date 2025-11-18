@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { ohanaPDVColors } from "./themes/brands/ohanaPDV/ohana-pdv-theme";
+import { demoColors } from "./themes/brands/demoBrand/demo-theme";
 import { CustomThemeProvider } from "./themeProvider/theme-provider";
 
 const root = ReactDOM.createRoot(
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <CustomThemeProvider brandTheme={{ colors: ohanaPDVColors }}>
+      <CustomThemeProvider brandTheme={{ colors: demoColors }}>
         <App />
       </CustomThemeProvider>
     </BrowserRouter>

@@ -1,1 +1,1 @@
-export * from "./ohanaPDV/ohana-pdv-theme.js";
+export * from "./demoBrand/demo-theme.js";
