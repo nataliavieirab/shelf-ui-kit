@@ -9,7 +9,7 @@ export const typography = {
     bold: 700,
   },
   variants: {
-    h1: { fontSize: pxToRem(26), fontWeight: 500, lineHeight: 1.6 },
+    h1: { fontSize: pxToRem(26), fontWeight: 600, lineHeight: 1.6 },
     h2: { fontSize: pxToRem(18), fontWeight: 500, lineHeight: 1.3 },
     h3: {
       fontSize: pxToRem(14),
