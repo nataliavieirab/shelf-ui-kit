@@ -32,7 +32,7 @@ export default function CustomHeader({
           lg: "12px 24px",
           xl: "16px 32px",
         },
-        borderBottom: "2px solid #f8c55fff",
+        borderBottom: `2px solid ${theme.palette.secondary.main}`,
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
