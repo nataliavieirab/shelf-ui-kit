@@ -33,18 +33,8 @@ export const createCustomTheme = (options?: CustomThemeOptions): Theme => {
 
     typography: {
       fontFamily: typography.fontFamily,
-      h1: typography.variants.h1,
-      h2: typography.variants.h2,
-      h3: typography.variants.h3,
-      h4: typography.variants.h4,
-      body1: typography.variants.body1,
-      body2: typography.variants.body2,
-      subtitle1: typography.variants.subtitle1,
-      subtitle2: typography.variants.subtitle2,
-      caption: typography.variants.caption,
-      overline: typography.variants.overline,
-      button: typography.variants.button,
-    },
+      ...typography.variants,
+    } as any,
 
     spacing: (factor: number) => `${0.5 * factor}rem`,
 
