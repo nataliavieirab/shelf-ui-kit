@@ -1,5 +1,6 @@
 import "@mui/material/styles";
 import { layoutMetrics } from "../themes/baseTokens/layout-metrics";
+import { typography } from "../themes/baseTokens/typography";
 import { SystemStyleObject } from "@mui/system";
 import { Theme as MuiTheme } from "@mui/material/styles";
 
@@ -8,6 +9,8 @@ import "@mui/x-data-grid/themeAugmentation";
 declare module "@mui/material/styles" {
   interface Theme {
     layoutMetrics: typeof layoutMetrics;
+
+    typography: typeof typography;
 
     customGradients: {
       primary: string;
@@ -32,6 +35,7 @@ declare module "@mui/material/styles" {
 
   interface ThemeOptions {
     layoutMetrics?: typeof layoutMetrics;
+    typography?: typeof typography;
 
     customGradients?: {
       primary?: string;
