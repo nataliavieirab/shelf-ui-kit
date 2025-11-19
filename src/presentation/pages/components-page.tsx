@@ -15,6 +15,7 @@ import TabsContainerExample from "../componentExamples/tabs-container-example";
 import PasswordTextfieldExample from "../componentExamples/password-textfield-example";
 import { WidthBoxSizes } from "../components/types";
 import { useTheme } from "@mui/material/styles";
+import PageTitleContainerExample from "../componentExamples/page-title-container-example";
 
 export default function ComponentsPreviewPage() {
   return (
@@ -114,6 +115,16 @@ export default function ComponentsPreviewPage() {
         <ComponentsWrapper
           items={[
             { label: "Tabs Container", component: <TabsContainerExample /> },
+          ]}
+          title="Tabs Container"
+        />
+
+        <ComponentsWrapper
+          items={[
+            {
+              label: "Page Title Container",
+              component: <PageTitleContainerExample />,
+            },
           ]}
           title="Tabs Container"
         />
