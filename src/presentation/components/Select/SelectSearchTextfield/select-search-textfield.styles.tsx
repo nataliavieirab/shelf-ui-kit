@@ -3,15 +3,15 @@ import { WidthBoxSizes } from "../../types";
 
 export const boxStyle =
   (
-    searchBoxWidth: string,
-    searchBoxHeight: string,
+    // searchBoxWidth: string,
+    // searchBoxHeight: string,
     backgroundColor: string,
     borderRadius: string,
     searchBorder: string,
     searchFocusedBorderColor?: string
   ) =>
   (theme: Theme) => ({
-    width: searchBoxWidth,
+    // width: searchBoxWidth,
     maxWidth: 600,
     minWidth: WidthBoxSizes(useTheme()).extraSmall,
 
@@ -24,7 +24,7 @@ export const boxStyle =
       borderRadius,
       border: searchBorder,
       backgroundColor,
-      height: searchBoxHeight,
+      // height: searchBoxHeight,
       paddingRight: "10px",
       "& fieldset": { borderRadius, border: searchBorder },
       "&.Mui-focused fieldset": {

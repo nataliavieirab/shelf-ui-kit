@@ -2,8 +2,6 @@ export type CustomContainedButtonProps = {
   placeholder: string;
   hasIcon?: boolean;
   type: "add" | "import" | "export" | "send";
-  fieldWidth?: string;
-  fieldHeight?: string;
   onClick?: () => void;
 };
 

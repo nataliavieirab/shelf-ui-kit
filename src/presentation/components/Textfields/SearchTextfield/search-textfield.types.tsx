@@ -17,7 +17,6 @@ export type SearchProps = {
   placeholder?: string;
   withLabel?: boolean;
   label?: string;
-  fieldWidth?: string;
   disabled?: boolean;
   styles?: StyleOverrides;
   icon?: ReactElement;

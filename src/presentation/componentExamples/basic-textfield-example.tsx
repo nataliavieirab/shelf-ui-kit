@@ -14,7 +14,6 @@ export default function SimpleTextFieldExample() {
         padding: "8px 20px 0px 0px",
         display: "flex",
         flexDirection: "row",
-        // gap: 20,
       }}
     >
       <InputTextField
@@ -25,8 +24,6 @@ export default function SimpleTextFieldExample() {
         errors={errors}
         messageBoxOnBottom={true}
       />
-
-      {/* <p>Você digitou: {productName}</p> */}
     </div>
   );
 }

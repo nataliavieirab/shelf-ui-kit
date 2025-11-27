@@ -1,11 +1,5 @@
 import { Theme } from "@mui/material/styles";
 
-export const textfieldStyles = (fieldWidth: string) => ({
-  "& .MuiInputBase-root": {
-    width: fieldWidth,
-  },
-});
-
 export const boxStyle = {
   display: "flex",
   flexDirection: "column",

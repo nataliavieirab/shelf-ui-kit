@@ -1,11 +1,10 @@
 import { Theme } from "@mui/material/styles";
 
-export const getButtonStyles = (theme: Theme, size: any, height: any) => ({
+export const getButtonStyles = (theme: Theme, height?: any) => ({
   background: theme.customGradients.primary,
-  height: height,
-  width: size,
+  // height: height,
   color: theme.palette.text.primary,
-  boxShadow: theme.shadows[2],
+  // boxShadow: theme.shadows[2],
   borderRadius: theme.shape.borderRadius,
   maxWidth: 600,
   minWidth: theme.layoutMetrics.inputBox.widths.extraSmall,
@@ -22,7 +21,7 @@ export const getButtonStyles = (theme: Theme, size: any, height: any) => ({
   "&:hover": {
     background: theme.customGradients.secondary,
     transform: "translateY(-1px)",
-    boxShadow: "1px 1px 1px 1px rgba(245, 245, 245, 1)",
+    // boxShadow: "1px 1px 1px 1px rgba(245, 245, 245, 1)",
   },
 });
 

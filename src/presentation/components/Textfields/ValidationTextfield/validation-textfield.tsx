@@ -3,11 +3,8 @@ import TextField from "@mui/material/TextField";
 import { useTheme } from "@mui/material/styles";
 import { ValidationTextFieldProps } from "./validation-textfield.types";
 import { useValidationTextField } from "./use-validation-textfield";
-import { WidthBoxSizes } from "../../types";
-import { textfieldStyles } from "../textfield.styles";
 
 export default function ValidationTextfield({
-  fieldWidth = WidthBoxSizes(useTheme()).small,
   error = true,
   // label = "Error",
   defaultValue = "Hello World",
@@ -30,7 +27,7 @@ export default function ValidationTextfield({
         }}
       >
         <TextField
-          sx={textfieldStyles(fieldWidth)}
+          fullWidth
           id="outlined-size-small"
           size="small"
           error={error}

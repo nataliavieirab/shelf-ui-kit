@@ -8,5 +8,4 @@ export type InputProps = {
   valueHandler: (value: string) => void;
   errors?: Errors[];
   messageBoxOnBottom?: boolean;
-  fieldWidth?: string;
 };

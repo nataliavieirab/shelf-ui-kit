@@ -19,16 +19,11 @@ const buttonIcons = {
 
 export const useCustomContainedButton = (
   type: ButtonType,
-  hasIcon: boolean,
-  fieldWidth: any,
-  fieldHeight: any
+  hasIcon: boolean
 ) => {
   const theme = useTheme();
 
-  const buttonStyles = React.useMemo(
-    () => getButtonStyles(theme, fieldWidth, fieldHeight),
-    [theme, fieldWidth, fieldHeight]
-  );
+  const buttonStyles = React.useMemo(() => getButtonStyles(theme), [theme]);
   const stackStyles = React.useMemo(() => getStackStyles(), []);
 
   const startIcon = React.useMemo(() => {

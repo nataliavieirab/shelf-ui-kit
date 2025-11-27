@@ -1,6 +1,5 @@
-import { Box, TextField, Typography, useTheme } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
-import { WidthBoxSizes } from "../../types";
 import { InputProps } from "./input-textfield.types";
 import { useState } from "react";
 import ErrorBox from "../../ErrorBox/error-box";
@@ -8,7 +7,6 @@ import {
   boxStyle,
   labelStyles,
   inputWrapperErrorStyle,
-  textfieldStyles,
 } from "../textfield.styles";
 
 export default function InputTextField({
@@ -19,7 +17,6 @@ export default function InputTextField({
   valueHandler,
   errors = [],
   messageBoxOnBottom = false,
-  fieldWidth = WidthBoxSizes(useTheme()).small,
 }: InputProps) {
   const [hoveredInfo, setHoveredInfo] = useState<boolean>(false);
 
@@ -40,8 +37,8 @@ export default function InputTextField({
           </Typography>
         )}
         <TextField
-          sx={textfieldStyles(fieldWidth)}
           required
+          fullWidth
           id="outlined-size-small"
           size="small"
           variant="outlined"

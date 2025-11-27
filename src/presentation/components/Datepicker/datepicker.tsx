@@ -8,7 +8,6 @@ type DatePickerProps = {
   changeHandler: (date: Date | undefined) => void;
   initialValue?: Date;
   label?: string;
-  fieldWidth?: string;
   fieldHeight?: string;
 };
 
@@ -16,7 +15,6 @@ export default function DatePickerComponent({
   changeHandler,
   initialValue,
   // label = "",
-  fieldWidth = WidthBoxSizes(useTheme()).small,
   fieldHeight = HeightBoxSizes(useTheme()).default,
 }: DatePickerProps) {
   const { value, handleChange } = useBasicDatePicker(initialValue);
@@ -27,7 +25,6 @@ export default function DatePickerComponent({
         value={value}
         onChange={(newValue) => handleChange(newValue, changeHandler)}
         format="DD/MM/YYYY"
-        sx={{ width: fieldWidth }}
         slotProps={{
           textField: {
             InputProps: {

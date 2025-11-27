@@ -1,7 +1,5 @@
 import { useState } from "react";
 import SelectComponent from "../components/Select/select";
-import { HeightBoxSizes } from "../components/types";
-import { useTheme } from "@mui/material";
 
 export default function SelectWSearchExample() {
   const [selectedItemId, setSelectedItemId] = useState<string>("");
@@ -60,7 +58,6 @@ export default function SelectWSearchExample() {
           setSelectedItemId(value);
         }}
         withSearch={true}
-        searchHeight={HeightBoxSizes(useTheme()).extraSmall}
       />
     </div>
   );

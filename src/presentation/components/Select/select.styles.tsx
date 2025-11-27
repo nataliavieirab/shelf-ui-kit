@@ -10,10 +10,8 @@ export const selectStyles = (
   fontColor: string,
   fontSize: string,
   backgroundColor: string,
-  fieldHeight?: string,
   iconColor?: string
 ) => ({
-  height: fieldHeight,
   color: fontColor,
   fontSize: fontSize,
   backgroundColor,

@@ -13,8 +13,6 @@ import NewImage from "../components/NewImage/new-image";
 import SelectWSearchExample from "../componentExamples/select-with-search-example";
 import TabsContainerExample from "../componentExamples/tabs-container-example";
 import PasswordTextfieldExample from "../componentExamples/password-textfield-example";
-import { WidthBoxSizes } from "../components/types";
-import { useTheme } from "@mui/material/styles";
 import PageTitleContainerExample from "../componentExamples/page-title-container-example";
 
 export default function ComponentsPreviewPage() {
@@ -73,7 +71,6 @@ export default function ComponentsPreviewPage() {
                   placeholder="Adicionar"
                   hasIcon={true}
                   type="add"
-                  fieldWidth={WidthBoxSizes(useTheme()).small}
                 />
               ),
             },

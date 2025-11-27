@@ -1,14 +1,14 @@
 import { Theme } from "@mui/material/styles";
 
-export const getButtonStyles = (theme: Theme, fieldWidth: string) => ({
+export const getButtonStyles = (theme: Theme) => ({
   backgroundColor: theme.palette.background.default,
   color: theme.palette.text.primary,
-  height: theme.layoutMetrics.inputBox.heights.button,
-  boxShadow: theme.shadows[2],
+  // height: theme.layoutMetrics.inputBox.heights.button,
+  // boxShadow: theme.shadows[2],
   borderRadius: theme.shape.borderRadius,
   border: theme.layoutMetrics.inputBox.border.defaultBorder,
 
-  width: fieldWidth,
+  // width: fieldWidth,
   maxWidth: 600,
   minWidth: theme.layoutMetrics.inputBox.widths.extraSmall,
 
@@ -25,7 +25,7 @@ export const getButtonStyles = (theme: Theme, fieldWidth: string) => ({
     background: theme.customGradients.secondary,
     border: "none",
     transform: "translateY(-1px)",
-    boxShadow: "0px 0px 2px 2px rgba(245, 245, 245, 1)",
+    // boxShadow: "0px 0px 2px 2px rgba(245, 245, 245, 1)",
   },
 });
 

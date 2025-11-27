@@ -1,5 +1,4 @@
 export interface ValidationTextFieldProps {
-  fieldWidth?: string;
   error?: boolean;
   label?: string;
   defaultValue?: string;

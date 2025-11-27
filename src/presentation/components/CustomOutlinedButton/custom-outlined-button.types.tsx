@@ -2,7 +2,6 @@ export type CustomOutlinedButtonProps = {
   placeholder: string;
   hasIcon?: boolean;
   type: "add" | "import" | "export" | "send";
-  fieldWidth?: string;
   onClick?: () => void;
 };
 

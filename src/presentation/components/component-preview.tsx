@@ -23,7 +23,7 @@ const boxStyle = css`
   border-radius: 12px;
   padding: 24px;
   background-color: #fff;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 `;
 
 export default function ComponentPreview({ title, children }: Props) {

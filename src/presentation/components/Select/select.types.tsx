@@ -12,8 +12,7 @@ export type SelectProps = {
   styles?: StyleOverrides;
   searchStyles?: SelectStyleOverrides;
   borderColor?: string;
-  fieldWidth?: string;
-  fieldHeight?: string;
+  // fieldHeight?: string;
   searchWidth?: string;
   searchHeight?: string;
   icon?: ReactElement;

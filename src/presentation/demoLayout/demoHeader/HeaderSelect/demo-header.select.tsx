@@ -62,8 +62,7 @@ export default function DemoHeaderSelect() {
           setSelectedItemId(value);
         }}
         withSearch={true}
-        fieldWidth={WidthBoxSizes(useTheme()).medium}
-        fieldHeight={"2.5rem"}
+        // fieldHeight={"2.5rem"}
         searchHeight={HeightBoxSizes(useTheme()).extraSmall}
         styles={selectStyle}
         searchStyles={searchStyles}

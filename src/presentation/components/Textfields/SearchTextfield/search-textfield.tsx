@@ -1,9 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { TextField, InputAdornment, Box, Typography } from "@mui/material";
 import { SearchProps } from "./search-textfield.types";
-import { WidthBoxSizes } from "../../types";
-import { useTheme } from "@mui/material/styles";
-import { labelStyles, textfieldStyles } from "../textfield.styles";
+import { labelStyles } from "../textfield.styles";
 import { SearchGradientIcon } from "../../Icons/gradient-icons";
 
 export default function SearchTextField({
@@ -12,7 +10,6 @@ export default function SearchTextField({
   placeholder = "Buscar...",
   withLabel = false,
   label = "",
-  fieldWidth = WidthBoxSizes(useTheme()).small,
   disabled = false,
 }: SearchProps) {
   return (
@@ -23,10 +20,10 @@ export default function SearchTextField({
         </Typography>
       )}
       <TextField
+        fullWidth
         value={value}
         id="outlined-size-small"
         size="small"
-        sx={textfieldStyles(fieldWidth)}
         onChange={(e) => changeHandler(e.target.value)}
         placeholder={placeholder}
         variant="outlined"

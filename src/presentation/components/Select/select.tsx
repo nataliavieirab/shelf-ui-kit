@@ -21,8 +21,6 @@ export default function SelectComponent({
   blocked = false,
   searchHeight = HeightBoxSizes(useTheme()).default,
   searchWidth = WidthBoxSizes(useTheme()).small,
-  fieldWidth = WidthBoxSizes(useTheme()).small,
-  fieldHeight = HeightBoxSizes(useTheme()).default,
   styles = {},
   searchStyles = {},
 }: SelectProps) {
@@ -67,7 +65,7 @@ export default function SelectComponent({
   const [selectOpened, setSelectOpened] = useState(false);
 
   return (
-    <Box sx={{ minWidth: fieldWidth }}>
+    <Box>
       <FormControl fullWidth>
         {withLabel && (
           <Typography variant="caption" sx={labelStyles}>
@@ -76,8 +74,10 @@ export default function SelectComponent({
         )}
 
         <Select
+          fullWidth
+          size="small"
           IconComponent={ArrowDropDownIcon}
-          sx={selectStyles(fontColor, fontSize, backgroundColor, fieldHeight)}
+          sx={selectStyles(fontColor, fontSize, backgroundColor)}
           autoComplete="off"
           inputProps={{ autoComplete: "off", readOnly: blocked }}
           MenuProps={{
@@ -113,8 +113,8 @@ export default function SelectComponent({
             >
               <Box
                 sx={boxStyle(
-                  searchBoxWidth,
-                  searchBoxHeight,
+                  // searchBoxWidth,
+                  // searchBoxHeight,
                   searchBackgroundColor,
                   searchBorderRadius,
                   searchBorder
@@ -122,6 +122,7 @@ export default function SelectComponent({
               >
                 <TextField
                   fullWidth
+                  size="small"
                   inputRef={inputRef}
                   placeholder="Pesquisar..."
                   onKeyDown={(event) => event.stopPropagation()}

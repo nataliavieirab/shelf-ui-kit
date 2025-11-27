@@ -1,7 +1,5 @@
 import { useState } from "react";
 import SelectComponent from "../components/Select/select";
-import { HeightBoxSizes } from "../components/types";
-import { Box, useTheme } from "@mui/material";
 
 export default function SelectExample() {
   const [selectedItemId, setSelectedItemId] = useState<string>("");
@@ -44,10 +42,12 @@ export default function SelectExample() {
   }, {});
 
   return (
-    <Box
-      sx={{
+    <div
+      style={{
+        padding: "8px 0px 0px 0px",
         display: "flex",
-        alignSelf: "center",
+        flexDirection: "row",
+        gap: 20,
       }}
     >
       <SelectComponent
@@ -59,8 +59,7 @@ export default function SelectExample() {
           setSelectedItemId(value);
         }}
         withSearch={false}
-        searchHeight={HeightBoxSizes(useTheme()).extraSmall}
       />
-    </Box>
+    </div>
   );
 }
