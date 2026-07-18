@@ -1,10 +1,10 @@
 {
-  "name": "@nataliavieirab/ui-componentkit",
+  "name": "@nataliavieirab/shelf-ui-kit",
   "version": "0.3.0",
   "private": false,
   "type": "module",
-  "main": "./dist/ui-component-kit.cjs.js",
-  "module": "./dist/ui-component-kit.es.js",
+  "main": "./dist/shelf-ui-kit.cjs.js",
+  "module": "./dist/shelf-ui-kit.es.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"

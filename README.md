@@ -1,15 +1,15 @@
-# UI Component Kit
+# Shelf UI Kit
 
 Biblioteca de componentes UI reutilizáveis para React, publicada como **GitHub Package**.  
 Construída com **React**, **TypeScript** e **Material UI (MUI)**, com sistema de temas customizável por marca.
 
-**Pacote:** [`@nataliavieirab/ui-componentkit`](https://github.com/nataliavieirab/UI-ComponentKit/packages) · **Versão atual:** `0.3.0`
+**Pacote:** [`@nataliavieirab/shelf-ui-kit`](https://github.com/users/nataliavieirab/packages/npm/package/shelf-ui-kit) · **Versão atual:** `0.3.0`
 
 ---
 
 ## Sobre o projeto
 
-O **UI Component Kit** nasceu como uma biblioteca interna de interface para acelerar o desenvolvimento de aplicações React com visual consistente. Em vez de recriar botões, formulários, tabelas e layouts em cada projeto, os componentes ficam centralizados aqui e são consumidos via import.
+O **Shelf UI Kit** nasceu como uma biblioteca interna de interface para acelerar o desenvolvimento de aplicações React com visual consistente. Em vez de recriar botões, formulários, tabelas e layouts em cada projeto, os componentes ficam centralizados aqui e são consumidos via import.
 
 A biblioteca inclui:
 
@@ -57,9 +57,9 @@ O token precisa da permissão `read:packages` (e acesso ao repositório, se for 
 ### 2. Instalar o pacote e as peers
 
 ```bash
-npm install @nataliavieirab/ui-componentkit
+npm install @nataliavieirab/shelf-ui-kit
 # ou
-pnpm add @nataliavieirab/ui-componentkit
+pnpm add @nataliavieirab/shelf-ui-kit
 ```
 
 Garanta que as peer dependencies listadas acima estejam instaladas no projeto.
@@ -73,7 +73,7 @@ Garanta que as peer dependencies listadas acima estejam instaladas no projeto.
 Envolva a aplicação com o `CustomThemeProvider`. Sem `brandTheme`, usa o tema base; com `brandTheme`, sobrescreve cores da marca.
 
 ```tsx
-import { CustomThemeProvider } from "@nataliavieirab/ui-componentkit";
+import { CustomThemeProvider } from "@nataliavieirab/shelf-ui-kit";
 
 function App() {
   return (
@@ -103,7 +103,7 @@ import {
   CustomDataTable,
   Sidebar,
   PageTitleContainer,
-} from "@nataliavieirab/ui-componentkit";
+} from "@nataliavieirab/shelf-ui-kit";
 
 export function ProductsPage() {
   return (
@@ -195,8 +195,8 @@ src/
 
 O build gera `dist/` com:
 
-- `ui-component-kit.es.js` (ESM)
-- `ui-component-kit.cjs.js` (CommonJS)
+- `shelf-ui-kit.es.js` (ESM)
+- `shelf-ui-kit.cjs.js` (CommonJS)
 - `index.d.ts` (tipagens)
 
 ---
@@ -231,7 +231,7 @@ Antes de publicar, o script `prepublishOnly` roda o build automaticamente.
 npm publish
 ```
 
-O pacote é publicado em `https://npm.pkg.github.com` sob o escopo `@nataliavieirab`.
+O pacote é publicado no GitHub Packages sob o escopo `@nataliavieirab` como `@nataliavieirab/shelf-ui-kit`.
 
 ---
 

@@ -44,9 +44,9 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "UIComponentKit",
+      name: "ShelfUIKit",
       formats: ["es", "cjs"],
-      fileName: (format) => `ui-component-kit.${format}.js`,
+      fileName: (format) => `shelf-ui-kit.${format}.js`,
     },
     rollupOptions: {
       external: (id) => externalDependencies.some((dep) => id.startsWith(dep)),
